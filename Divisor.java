@@ -1,0 +1,16 @@
+
+import java.util.*;
+public class Divisor {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        for (int i = 1; i * i <= a; i++) {
+            if (a % i == 0) {
+                System.out.print(i + " ");
+                if (i != (a / i)) {
+                    System.out.println(a / i);
+                }
+            }
+        }
+    }
+}
